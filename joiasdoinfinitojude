@@ -6,7 +6,7 @@ int main(){
     
     bool b; // b for beyond [value]
     
-    for(int i=0; i<6; i++){
+    for(short i=0; i<6; i++){
         scanf("%hi", &j[i]);
         if(j[i] > 6 || j[i] < 1){
             b = true;
