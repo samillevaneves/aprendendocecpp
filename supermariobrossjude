@@ -15,7 +15,7 @@ int main(){
     scanf("%hi%hi%hi", &starc, &megam, &koopa);
     
     if(starc == 30){
-        printf("PROXIMO MUNDO");
+        puts("PROXIMO MUNDO");
     }else{
         printf("%hi %hi %hi", g(starc, 30), g(megam, 6), g(koopa, 3));
     }
