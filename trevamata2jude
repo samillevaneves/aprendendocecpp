@@ -1,0 +1,38 @@
+#include <cstdio>
+
+int main(){
+
+    short nmf, max; //nmf for number of motherfuckers, max for max weight
+
+    scanf("%hi", &nmf);
+
+    short w[nmf]; //w for weight
+    char n[nmf][50]; //n for name
+
+    for(int i=0; i < nmf; i++){
+        scanf("%s %hi", &n[i], &w[i]);
+    }
+
+    scanf("%hi", &max);
+
+    bool alr = true; //alr for alright lol
+
+    for(short i=0; i < nmf; i++){
+        if(w[i] > max){
+            puts("Vamos virar almoço de aranhas gigantes!");
+            for(short j=0; j < nmf; j++){
+                if(w[j] > max){
+                    puts(n[j]);
+                }
+            }
+            alr = false;
+            break;
+        }
+    }
+
+    if(alr){
+        puts("Vamos todos encontrar a montanha!");
+    }
+
+    return 0;
+}
