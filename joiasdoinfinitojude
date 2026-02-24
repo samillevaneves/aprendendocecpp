@@ -1,0 +1,24 @@
+#include <cstdio>
+
+int main(){
+    
+    short s, j[6]; //s for sum, j for jewelry
+    
+    bool b; // b for beyond [value]
+    
+    for(int i=0; i<6; i++){
+        scanf("%hi", &j[i]);
+        if(j[i] > 6 || j[i] < 1){
+            b = true;
+        }
+        s += j[i];
+    }
+    
+    if(b){
+        puts("Os Vingadores ganharam a batalha!!!");
+    }else if(s == 21){
+        puts("Infelizmente perdemos a guerra.");
+    }
+
+    return 0;
+}
