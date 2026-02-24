@@ -1,6 +1,6 @@
 #include <iostream>
 
-int g(int x, int y){
+int g(short x, short y){
     if (0 < x < y){
         return y - x;
     }else{
@@ -10,14 +10,14 @@ int g(int x, int y){
 
 int main(){
     
-    int starc, megam, koopa;
+    short starc, megam, koopa;
     
-    scanf("%i%i%i", &starc, &megam, &koopa);
+    scanf("%hi%hi%hi", &starc, &megam, &koopa);
     
     if(starc == 30){
         printf("PROXIMO MUNDO");
     }else{
-        printf("%i %i %i", g(starc, 30), g(megam, 6), g(koopa, 3));
+        printf("%hi %hi %hi", g(starc, 30), g(megam, 6), g(koopa, 3));
     }
     
     return 0;
