@@ -2,20 +2,20 @@
 
 int main(){
 
-    short nmf, max; //nmf for number of motherfuckers, max for max weight
+    short nmf, max; //nmf for number of mfs, max for max weight
 
     scanf("%hi", &nmf);
 
     short w[nmf]; //w for weight
     char n[nmf][50]; //n for name
 
-    for(int i=0; i < nmf; i++){
+    for(short i=0; i < nmf; i++){
         scanf("%s %hi", &n[i], &w[i]);
     }
 
     scanf("%hi", &max);
 
-    bool alr = true; //alr for alright lol
+    bool ealr = true; //ealrg for everything alr
 
     for(short i=0; i < nmf; i++){
         if(w[i] > max){
@@ -25,12 +25,12 @@ int main(){
                     puts(n[j]);
                 }
             }
-            alr = false;
+            ealr = false;
             break;
         }
     }
 
-    if(alr){
+    if(ealr){
         puts("Vamos todos encontrar a montanha!");
     }
 
