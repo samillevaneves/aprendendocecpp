@@ -1,0 +1,30 @@
+#include <cstdio>
+
+bool cf(short x);
+
+short f, p; //fish and price
+
+int main(){
+
+    scanf("%hi %hi", &f, &p);
+
+    //bs for boolean sum
+    short bs = cf(500) + cf(1800) + cf(7500);
+
+    switch(bs){
+        case 1: puts("Vara de Fibra de Vidro");
+        break;
+        case 2: puts("Vara de Bambu");
+        break;
+        case 3: puts("Paciencia Firmino!");
+        break;
+        default: puts("Vara de Iridio");
+    }
+
+    return 0;
+}
+
+//cf for "check for"
+bool cf(short x){
+    return ((int) f*p < x);
+}
