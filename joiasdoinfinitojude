@@ -9,7 +9,7 @@ int main(){
     
     bool b; // b for beyond [value]
     
-    for(int i=0; i<6; i++){
+    for(int8_t i=0; i<6; i++){
         scanf("%" SCNi8, &j[i]);
         if(j[i] > 6 || j[i] < 1){
             b = true;
