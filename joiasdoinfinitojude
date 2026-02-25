@@ -1,13 +1,16 @@
 #include <cstdio>
+#include <cstdint>
+#include <cinttypes>
 
 int main(){
     
-    short s, j[6]; //s for sum, j for jewelry
+    short s; //s for sum
+    int8_t j[6]; //j for jewelry
     
     bool b; // b for beyond [value]
     
-    for(short i=0; i<6; i++){
-        scanf("%hi", &j[i]);
+    for(int i=0; i<6; i++){
+        scanf("%" SCNi8, &j[i]);
         if(j[i] > 6 || j[i] < 1){
             b = true;
         }
